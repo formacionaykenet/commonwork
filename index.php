@@ -25,7 +25,7 @@
             bottom: 0;
             background: url('img/fondo_principal.png') no-repeat center center fixed;
             background-size: cover;
-            opacity: 0,8;
+            opacity: 0.3;
             /* Opacidad del 80% */
             z-index: -1;
         }
@@ -71,7 +71,7 @@
 
         .btn-text {
             position: absolute;
-            top: 50%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
@@ -79,23 +79,43 @@
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+
+       /*.logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 400px;
+            height: 400px;
+            z-index: 3;
+        }*/
+
+        .logo {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            z-index: 3;
+        }
     </style>
 </head>
 
 <body>
     <div class="overlay"></div>
     <div class="content">
+    <img src="img/logo-transparente.png" alt="Logo de app_web_certi" class="logo">
         <div class="btn-container">
             <a href="index_facturas.php" class="btn-image">
-                <img src="img/facturas.png" alt="Facturas">
+                <img src="img/facturas_azul.png" alt="Facturas">
                 <div class="btn-text">Facturas</div>
             </a>
             <a href="index_clientes.php" class="btn-image">
-                <img src="img/clientes.png" alt="Clientes">
+                <img src="img/clientes_azul.png" alt="Clientes">
                 <div class="btn-text">Clientes</div>
             </a>
             <a href="index_productos.php" class="btn-image">
-                <img src="img/productos.png" alt="Productos">
+                <img src="img/productos_azul.png" alt="Productos">
                 <div class="btn-text">Productos</div>
             </a>
         </div>
